@@ -66,6 +66,7 @@ int getIndex(LinearTable L, ElemType e) {
     for (int i = 0; i < L.length; i++) {
         if (L.data[i] == e) {
             index = i;
+            break;
         }
     }
     if (L.length < index || index < 0) {
