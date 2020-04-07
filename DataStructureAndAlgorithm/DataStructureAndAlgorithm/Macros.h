@@ -13,6 +13,8 @@
 //#include "time.h"
 
 #define MAXSIZE_LINEARTABLE 100
+#define MAXSIZE_SingleLinkedList 20
+
 #define OK 1
 #define ERROR 0
 #define TRUE 1
