@@ -54,7 +54,7 @@ Status deleteElem(LinearTable *L, ElemType e);
 
 /// 删除元素
 /// @param L 线性表
-/// @param e 元素
+/// @param i 元素
 Status deleteElemAtIndex(LinearTable *L, int i);
 
 
@@ -72,4 +72,7 @@ Status clearTable(LinearTable *L);
 /// 判断表是否为空
 /// @param L 线性表
 Status isEmpty(LinearTable L);
+
+//测试线性表
+void linearTableTest(void);
 #endif /* LinearTable_h */

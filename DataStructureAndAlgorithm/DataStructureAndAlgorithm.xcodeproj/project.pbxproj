@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */; };
 		B2857CC224386C1C0066F154 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B2857CC124386C1C0066F154 /* main.c */; };
 		B2857CCD24387EA90066F154 /* LinearTable.c in Sources */ = {isa = PBXBuildFile; fileRef = B2857CCC24387EA90066F154 /* LinearTable.c */; };
 		B2EF38AB243CB18C00D7E7B1 /* SingleLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = B2EF38AA243CB18C00D7E7B1 /* SingleLinkedList.c */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D39A5E6243DAA5B003A0BC8 /* DoubleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
+		9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleLinkedList.c; sourceTree = "<group>"; };
 		B2857CBE24386C1C0066F154 /* DataStructureAndAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2857CC124386C1C0066F154 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B2857CCA243873160066F154 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				B2857CCC24387EA90066F154 /* LinearTable.c */,
 				B2EF38A9243CB18C00D7E7B1 /* SingleLinkedList.h */,
 				B2EF38AA243CB18C00D7E7B1 /* SingleLinkedList.c */,
+				9D39A5E6243DAA5B003A0BC8 /* DoubleLinkedList.h */,
+				9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */,
 			);
 			path = DataStructureAndAlgorithm;
 			sourceTree = "<group>";
@@ -100,7 +105,7 @@
 		B2857CB624386C1C0066F154 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "齐科";
 				TargetAttributes = {
 					B2857CBD24386C1C0066F154 = {
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2857CCD24387EA90066F154 /* LinearTable.c in Sources */,
+				9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */,
 				B2857CC224386C1C0066F154 /* main.c in Sources */,
 				B2EF38AB243CB18C00D7E7B1 /* SingleLinkedList.c in Sources */,
 			);
@@ -252,6 +258,7 @@
 		B2857CC624386C1C0066F154 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RGPU8ZAGK3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -263,6 +270,7 @@
 		B2857CC724386C1C0066F154 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RGPU8ZAGK3;
 				ENABLE_HARDENED_RUNTIME = YES;
