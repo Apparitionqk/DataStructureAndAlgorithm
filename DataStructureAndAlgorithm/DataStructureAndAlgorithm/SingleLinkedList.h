@@ -20,7 +20,7 @@ typedef struct Node{
 
 typedef struct Node *LinkList;
 
-
+Status initList(LinkList *L);
 /// 单向循环链表创建
 /// @param L 链表指针
 Status createList(LinkList *L);
@@ -30,7 +30,7 @@ Status createList(LinkList *L);
 Status createList2(LinkList *L);
 
 //遍历循环链表，循环链表的遍历最好用do while语句，因为头节点就有值
-void show(LinkList L);
+void displayList(LinkList L);
 
 // 循环链表插入数据
 Status listInsert(LinkList *L, int index, int num);

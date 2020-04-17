@@ -7,6 +7,16 @@
 //
 
 #include "SingleLinkedList.h"
+
+Status initList(LinkList *L) {
+    *L = (LinkList)malloc(sizeof(Node));
+    if (!*L){
+        printf("初始化失败");
+        return ERROR;
+    }
+    (*L)->next = NULL;
+    return OK;
+}
 /*
 循环链表创建!
 2种情况:① 第一次开始创建; ②已经创建,往里面新增数据
@@ -72,7 +82,7 @@ Status createList2(LinkList *L) {
     return OK;
 }
 //遍历循环链表，循环链表的遍历最好用do while语句，因为头节点就有值
-void show(LinkList L) {
+void displayList(LinkList L) {
     //如果链表是空
     if (L == NULL) {
         printf("打印的链表为空!\n");
@@ -181,7 +191,7 @@ void singleLinkedTest(void) {
     //初始化
     iStatus = createList(&head);
     printf("原始的链表:\n");
-    show(head);
+    displayList(head);
     while (stop != 0) {
         printf("请输入要测试的功能：\n0. 退出\n1. 手动插入数据\n2.  查询元素位置\n3. 删除第n个元素\n");
         int operation;
@@ -222,6 +232,6 @@ void singleLinkedTest(void) {
             default:
                 break;
         }
-        show(head);
+        displayList(head);
     }
 }

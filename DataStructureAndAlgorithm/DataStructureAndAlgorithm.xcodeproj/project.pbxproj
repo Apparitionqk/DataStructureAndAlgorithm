@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */; };
-		9D39A5EB243DDB0B003A0BC8 /* LinkedListHomeWork.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5EA243DDB0B003A0BC8 /* LinkedListHomeWork.c */; };
+		9D39A5EB243DDB0B003A0BC8 /* LinkedListExercises.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5EA243DDB0B003A0BC8 /* LinkedListExercises.c */; };
 		B2857CC224386C1C0066F154 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B2857CC124386C1C0066F154 /* main.c */; };
 		B2857CCD24387EA90066F154 /* LinearTable.c in Sources */ = {isa = PBXBuildFile; fileRef = B2857CCC24387EA90066F154 /* LinearTable.c */; };
 		B2EF38AB243CB18C00D7E7B1 /* SingleLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = B2EF38AA243CB18C00D7E7B1 /* SingleLinkedList.c */; };
@@ -29,8 +29,8 @@
 /* Begin PBXFileReference section */
 		9D39A5E6243DAA5B003A0BC8 /* DoubleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
 		9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleLinkedList.c; sourceTree = "<group>"; };
-		9D39A5E9243DDB0B003A0BC8 /* LinkedListHomeWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListHomeWork.h; sourceTree = "<group>"; };
-		9D39A5EA243DDB0B003A0BC8 /* LinkedListHomeWork.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkedListHomeWork.c; sourceTree = "<group>"; };
+		9D39A5E9243DDB0B003A0BC8 /* LinkedListExercises.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListExercises.h; sourceTree = "<group>"; };
+		9D39A5EA243DDB0B003A0BC8 /* LinkedListExercises.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkedListExercises.c; sourceTree = "<group>"; };
 		B2857CBE24386C1C0066F154 /* DataStructureAndAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2857CC124386C1C0066F154 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B2857CCA243873160066F154 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 				B2EF38AA243CB18C00D7E7B1 /* SingleLinkedList.c */,
 				9D39A5E6243DAA5B003A0BC8 /* DoubleLinkedList.h */,
 				9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */,
-				9D39A5E9243DDB0B003A0BC8 /* LinkedListHomeWork.h */,
-				9D39A5EA243DDB0B003A0BC8 /* LinkedListHomeWork.c */,
+				9D39A5E9243DDB0B003A0BC8 /* LinkedListExercises.h */,
+				9D39A5EA243DDB0B003A0BC8 /* LinkedListExercises.c */,
 			);
 			path = DataStructureAndAlgorithm;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 				9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */,
 				B2857CC224386C1C0066F154 /* main.c in Sources */,
 				B2EF38AB243CB18C00D7E7B1 /* SingleLinkedList.c in Sources */,
-				9D39A5EB243DDB0B003A0BC8 /* LinkedListHomeWork.c in Sources */,
+				9D39A5EB243DDB0B003A0BC8 /* LinkedListExercises.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
