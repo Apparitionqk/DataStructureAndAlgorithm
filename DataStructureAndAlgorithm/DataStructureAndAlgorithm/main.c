@@ -11,7 +11,7 @@
 #include "SingleLinkedList.h"
 #include "DoubleLinkedList.h"
 #include "LinkedListExercises.h"
-
+#include "StackAndStackStorage.h"
 
 
 
@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     
     printf("数据结构与算法\n");
-    printf("选择测试项目\n1. 线性表\n2.单向链表\n3.双向链表\n4.链表习题\n");
+    printf("选择测试项目\n1. 线性表\n2.单向链表\n3.双向链表\n4.链表习题\n5.栈与顺序存储\n");
     
     int selectItem;
    
@@ -37,6 +37,9 @@ int main(int argc, const char * argv[]) {
         case 4:
             testLinkedList();
             break;
+        case 5:
+            testStack();
+        break;
         default:
             break;
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D346606244EE13E0084664B /* StackAndStackStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D346605244EE13E0084664B /* StackAndStackStorage.c */; };
 		9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */; };
 		9D39A5EB243DDB0B003A0BC8 /* LinkedListExercises.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D39A5EA243DDB0B003A0BC8 /* LinkedListExercises.c */; };
 		B2857CC224386C1C0066F154 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B2857CC124386C1C0066F154 /* main.c */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D346604244EE13E0084664B /* StackAndStackStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackAndStackStorage.h; sourceTree = "<group>"; };
+		9D346605244EE13E0084664B /* StackAndStackStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StackAndStackStorage.c; sourceTree = "<group>"; };
 		9D39A5E6243DAA5B003A0BC8 /* DoubleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleLinkedList.h; sourceTree = "<group>"; };
 		9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleLinkedList.c; sourceTree = "<group>"; };
 		9D39A5E9243DDB0B003A0BC8 /* LinkedListExercises.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListExercises.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				9D39A5E7243DAA5B003A0BC8 /* DoubleLinkedList.c */,
 				9D39A5E9243DDB0B003A0BC8 /* LinkedListExercises.h */,
 				9D39A5EA243DDB0B003A0BC8 /* LinkedListExercises.c */,
+				9D346604244EE13E0084664B /* StackAndStackStorage.h */,
+				9D346605244EE13E0084664B /* StackAndStackStorage.c */,
 			);
 			path = DataStructureAndAlgorithm;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2857CCD24387EA90066F154 /* LinearTable.c in Sources */,
+				9D346606244EE13E0084664B /* StackAndStackStorage.c in Sources */,
 				9D39A5E8243DAA5B003A0BC8 /* DoubleLinkedList.c in Sources */,
 				B2857CC224386C1C0066F154 /* main.c in Sources */,
 				B2EF38AB243CB18C00D7E7B1 /* SingleLinkedList.c in Sources */,
