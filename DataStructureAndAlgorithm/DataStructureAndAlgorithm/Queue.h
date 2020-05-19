@@ -19,8 +19,7 @@ typedef struct {
     QElemType data[MAXSIZE_NodeList];
     int front; //!< 头指针
     int rear;   //!< 尾指针
-}SqQueue;
-
+}SqQueue; //!< 顺序队列
 
 
 /// 队列初始化
@@ -65,4 +64,33 @@ Status deleteHeadOfQueue(SqQueue *q, QElemType *e);
 /// @param q 队列指针
 Status queueTraverse(SqQueue q);
 void testQueue();
+
+/********  链式队列  ******/
+typedef struct QNode{
+    QElemType data;
+    struct QNode *next;
+}QNode, *QueuePtr;
+
+typedef struct {
+    QueuePtr front, rear; //!< 队头、队尾指针
+}LinkQueue;
+
+Status initLinkQueue(LinkQueue *Q);
+
+Status destoryLinkQueue(LinkQueue *Q);
+
+Status clearLinkQueue(LinkQueue *Q);
+
+Status isLinkQueueEmpty(LinkQueue Q);
+
+int lengthOfLinkQueue(LinkQueue Q);
+
+Status insertLinkQueue(LinkQueue *Q, ElemType e);
+
+Status deLinkQueue(LinkQueue *Q, QElemType *e);
+
+Status getLinkQueueHead(LinkQueue Q, QElemType *e);
+
+Status linkQueueTraverse(LinkQueue Q);
+
 #endif /* Queue_h */
