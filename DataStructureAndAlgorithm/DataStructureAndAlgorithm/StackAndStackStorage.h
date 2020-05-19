@@ -17,7 +17,7 @@
 
 typedef int SElemType; /* SElemType类型根据实际情况而定，这里假设为int */
 typedef struct {
-    SElemType data[MAXSIZE_SingleLinkedList];
+    SElemType data[MAXSIZE_NodeList];
     int top; //!< 用于栈顶指针
 }SqStack; //!< 栈结构
 
@@ -90,12 +90,12 @@ Status clearLinkStack(LinkStack *S);
 
 /// 判断链栈是否为空栈
 /// @param S S description
-Status isLinkStackEmpty(LinkStack *S);
+Status isLinkStackEmpty(LinkStack S);
 
 
 /// 获取栈长度
 /// @param S S description
-Status lengthOfLinkStack(LinkStack S);
+int lengthOfLinkStack(LinkStack S);
 
 
 /// 获取栈顶
@@ -107,7 +107,7 @@ Status getLinkStackTop(LinkStack S, SElemType *e);
 /// 插入元素到链栈
 /// @param S S description
 /// @param e 新栈顶元素
-Status pushLinkStack(LinkStack *S, SElemType *e);
+Status pushLinkStack(LinkStack *S, SElemType e);
 
 
 /// 删除栈顶元素，用e返回值

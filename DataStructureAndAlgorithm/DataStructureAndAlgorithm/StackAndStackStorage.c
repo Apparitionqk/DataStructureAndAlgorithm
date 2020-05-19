@@ -62,7 +62,7 @@ Status getStackTop(SqStack S, SElemType *e) {
 /// @param e 栈顶元素
 Status pushData(SqStack *S, SElemType e) {
     //栈已满
-    if (S->top == MAXSIZE_SingleLinkedList - 1) {
+    if (S->top == MAXSIZE_NodeList - 1) {
         printf("栈满");
         return ERROR;
     }
@@ -176,32 +176,107 @@ Status clearLinkStack(LinkStack *S) {
 
 /// 判断链栈是否为空栈
 /// @param S S description
-Status isLinkStackEmpty(LinkStack *S);
+Status isLinkStackEmpty(LinkStack S) {
+    if (S.count == 0) {
+        return TRUE;
+    }
+    return FALSE;
+}
 
 
 /// 获取栈长度
 /// @param S S description
-Status lengthOfLinkStack(LinkStack S);
+int lengthOfLinkStack(LinkStack S) {
+    return S.count;
+}
 
 
 /// 获取栈顶
 /// @param S S description
 /// @param e e description
-Status getLinkStackTop(LinkStack S, SElemType *e);
+Status getLinkStackTop(LinkStack S, SElemType *e) {
+    if (S.top == NULL) {
+        printf("栈顶为空");
+        return ERROR;
+    }
+    *e = S.top->data;
+    return OK;
+}
 
 
 /// 插入元素到链栈
 /// @param S S description
 /// @param e 新栈顶元素
-Status pushLinkStack(LinkStack *S, SElemType *e);
+Status pushLinkStack(LinkStack *S, SElemType e) {
+    //创建新的结点temp
+    LinkStackPtr temp =  (LinkStackPtr)malloc(sizeof(StackNode));
+    //赋值
+    temp->data = e;
+    //把当前栈顶元素赋值给新结点的后继
+    temp->next = S->top;
+    //将新结点temp赋值给栈顶指针
+    S->top = temp;
+    S->count ++;
+    return OK;
+}
 
 
 /// 删除栈顶元素，用e返回值
 /// @param S S description
 /// @param e e description
-Status popLinkStack(LinkStack *S, SElemType *e);
+Status popLinkStack(LinkStack *S, SElemType *e) {
+    LinkStackPtr p;
+    if (isLinkStackEmpty(*S)) {
+        printf("链表为空");
+        return ERROR;
+    }
+    //将栈顶元素赋值给*e
+    *e = S->top->data;
+    //将栈顶结点赋值给p
+    p = S->top;
+    //是栈顶指针下移一位，指向后一结点
+    S->top = S->top->next;
+    //释放p
+    free(p);
+    //个数--
+    S->count -- ;
+    return OK;
+}
 
 
 /// 遍历输出链栈
 /// @param S S description
-Status linkStackTraverse(LinkStack S);
+Status linkStackTraverse(LinkStack S) {
+    if (isLinkStackEmpty(S)) {
+        printf("链表为空");
+        return ERROR;
+    }
+    printf("栈中元素依次为：\n");
+    LinkStackPtr p;
+    p = S.top;
+    while (p) {
+        printf("%d ", p->data);
+        p = p->next;
+    }
+    printf("\n");
+    return OK;
+}
+void testLinkStack(void) {
+    int j;
+    LinkStack s;
+    int e;
+    if (initLinkStack(&s) == OK) {
+        for (j = 1; j <= 10; j++) {
+            pushLinkStack(&s, j);
+        }
+    }
+    linkStackTraverse(s);
+    popLinkStack(&s, &e);
+    printf("弹出的栈顶元素 e=%d\n",e);
+    linkStackTraverse(s);
+    printf("栈空否：%d(1:空 0:否)\n",isLinkStackEmpty(s));
+    getLinkStackTop(s,&e);
+    printf("栈顶元素 e=%d 栈的长度为%d\n", e, lengthOfLinkStack(s));
+    clearLinkStack(&s);
+    printf("清空栈后，栈空否：%d(1:空 0:否)\n",isLinkStackEmpty(s));
+}
